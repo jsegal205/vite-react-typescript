@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "check-prettier": "prettier --check '**/*.{js,css,html,tsx,scss}'",
+    "prettier": "prettier --write '**/*.{js,css,html,tsx,scss}'",
     "preview": "vite preview",
     "test": "vitest",
     "tsc": "./node_modules/typescript/bin/tsc"
@@ -21,6 +23,7 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "jsdom": "^20.0.3",
+    "prettier": "^2.8.1",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vitest": "^0.25.8"
